@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>{{ user.username }}'s Profile</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>Actual Name:</h4>
+      </div>
+      <div class="col-sm-9">
+        <p>{{ user.actual_name }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>Joined:</h4>
+      </div>
+      <div class="col-sm-9">
+        <p>{{ user.joined }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>Favourite Styles:</h4>
+      </div>
+      <div class="col-sm-9">
+        <p>{{ user.favourite_styles }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>Contact:</h4>
+      </div>
+      <div class="col-sm-9">
+        <p>{{ user.contact }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>About:</h4>
+      </div>
+      <div class="col-sm-9">
+        <p>{{ user.about }}</p>
+      </div>
+    </div>
+{% endblock %}
