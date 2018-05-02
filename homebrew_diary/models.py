@@ -11,7 +11,7 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(120), index=True, unique=True)
     password_hash = db.Column(db.String(128))
     joined = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    actual_name = db.Column(db.String(128), default='N/a')
+    actual_name = db.Column(db.String(128), default='')
     favourite_styles = db.Column(db.String(128), default='beer')
     about = db.Column(db.String(2048), default='I like beer.')
     contact = db.Column(db.String(128), default='')
